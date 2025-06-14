@@ -1,0 +1,57 @@
+<!---------------------------------------------------------- TO-DO LIST PROJECT --------------------------------------------------------->
+
+<!---------------------------------------------------------- UI & Components ----------------------------------------------------------->
+
+| Header.jsx :
+           1. Heading added (To-Do List with emoji). 
+
+| UI in App.jsx :
+              1. Background Color added (purple).
+              2. White background div created with curver edges.
+              3. Header component added.
+              4. Input box added with onChange and onKeyDown event handlers.
+              5. Add button added with hover effect.
+              6. ToDoList component added.
+   
+| App.jsx :
+        State Variables:
+                      1. tasks created to handle tasks.
+                      2. inputValue created To hold the current value of the input field.
+        addTask():
+                1. It checks if the input is empty.
+                2. It creates a new task with a unique id using Date.now().
+                3. Resets inputValue to clear the input box.
+        editTask():
+                 1. It maps all over tasks.
+                 2. It changes maching ids text with newtext.
+                 3. When clicked Enter changes saved.
+        deleteTask():
+                   1. Removes the task maching with id.
+                   2. Then using filter() to return new task list without that task.
+        Completed():
+                  1. Maps over all tasks.
+                  2. Do Matching by id and set completed with true or False.
+                  3. If completed that empty box will be filled with svg.
+
+| ToDoList.jsx :
+             1. Created a div/container to wrap all tasks in it.
+             2. ToDoItem component added.
+             3. It also passes functions as props.
+
+| ToDoItem.jsx :
+             1. State Variables isEditing and editedText created to handle editing.
+             2. Added Check box button for ticking task as completed.
+             3. When check box clicked turn red using svg.
+             4. It handled using onToggle().
+             5. Used span to put text/task retrived from input field.
+             6. if in editing it replace span with input field.
+             7. Added edit button to edit task.
+             8. Edit button styled as Clickable Pencil icon.
+             9. When clicked on edit button it converts task into an editable input box.
+             10. When pressed on Enter it updates the task.
+             5. Added Delete button to delete task.
+             6. Delete button styled as Clickable X icon.
+             7. It Calls onDelete() when clicked.
+             8. Also added hover effect on both delete and edit button.
+
+<!---------------------------------------------------------------- END ---------------------------------------------------------------->
